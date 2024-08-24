@@ -1,0 +1,72 @@
+Proyecto Final: Procesamiento Masivo de Datos usando HDFS, Spark y Kafka
+
+
+
+
+Análisis en Tiempo Real y Almacenamiento de Datos de Sensores IoT
+
+
+
+El objetivo de este proyecto es crear una arquitectura robusta y escalable para procesar, analizar y almacenar datos generados por sensores IoT en tiempo real. Utilizaremos Apache Kafka para la ingestión de datos, Apache Spark para el procesamiento y análisis de datos en tiempo real, y HDFS (Hadoop Distributed File System) para el almacenamiento persistente y distribuido de los datos.
+
+Componentes del Proyecto:
+Ingestión de Datos con Apache Kafka:
+Configuración de un clúster de Kafka.
+Creación de tópicos para recibir datos de sensores IoT.
+Simulación de dispositivos IoT que envían datos a Kafka en tiempo real.
+Procesamiento de Datos con Apache Spark:
+Configuración de un clúster de Spark.
+Uso de Spark Streaming para consumir datos de los tópicos de Kafka.
+Procesamiento en tiempo real: filtrado, agregación y transformación de datos.
+Análisis de datos: cálculo de métricas y estadísticas en tiempo real.
+Almacenamiento de Datos en HDFS:
+Configuración de un clúster de Hadoop con HDFS.
+Almacenamiento de datos procesados en HDFS para análisis y almacenamiento a largo plazo.
+Gestión de datos en HDFS: compresión, particionado y organización.
+Visualización:
+Generar gráficos mostrando los datos procesados en tiempo real.
+
+
+
+
+
+
+Simulación de Datos de Sensores IoT:
+
+Creación de un script en Python o cualquier otro lenguaje para simular datos de sensores (por ejemplo, temperatura, humedad).
+Envío de datos simulados a los tópicos de Kafka.
+Ingesta y Procesamiento de Datos:
+
+Creación de consumidores en Spark Streaming para leer datos de Kafka.
+Implementación de lógica de procesamiento de datos en Spark (filtrado, agregación, etc.).
+Almacenamiento de los resultados procesados en HDFS.
+
+
+Resultados Esperados:
+Una arquitectura funcional que integre Kafka, Spark y HDFS.
+Capacidad para procesar y analizar datos de sensores IoT en tiempo real.
+Almacenamiento de datos procesados en HDFS.
+
+
+Entregables
+
+Imagen de la arquitectura creada
+Poster académico con detalles del proyecto
+
+
+
+
+
+
+
+
+
+
+
+
+En cuestion de rendimiento de sistema la latencia tiene un tiempo promedio de procesameinto por cada evento desde el ingreso de datos a Kafka hasta el almacenamiento, la escalabilidad muestra como el sistema se adapta al constante flujo de datos, la precision de los datos se muestran en la visualizacion de estas ya que no presentan ninguna perturbacion desde que se generaron y loa graficos representan la evolucion de las variables en el tiempo.
+Podemos decir que la arquitectura es capaz de procesar datos en tiempo real, ya que Kafka es eficiente para la ingestion de datos, Spark Streaming tambien lo es para el procesamiento en tiempo real ya que presenta resultados en la tareas asignadas y HDFS es confiable para el almacenamiento ya que refleja la disponibilidad y fiabilidad del sistema de almacenamiento.
+
+
+
+

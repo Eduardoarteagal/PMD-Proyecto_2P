@@ -1,0 +1,37 @@
+/* Levantar servidor Hadoop
+start-all.sh
+
+Crear carpetas en Hadoop
+hadoop fs -mkdir /proyecto/temperatura
+hadoop fs -mkdir /proyecto/humedad
+*/
+/*En la carpeta de Kafka
+Levantar zookeeper
+./bin/zookeeper-server-start.sh ../config/zookeeper.properties
+
+Levantar Kafka
+./bin/kafka-server-start.sh ../config/server.properties
+
+Crear topics humedad y temperatura
+./bin/kafka-topics.sh --create --bootstrap-server localhost:9092 --replication-factor 1 --partitions 1 --topic topic-humedad
+
+./bin/kafka-topics.sh --create --bootstrap-server localhost:9092 --replication-factor 1 --partitions 1 --topic topic-temperatura
+
+Comprobar topics creados
+./kafka-topics.sh --list --bootstrap-server localhost:9092
+
+Borrar topics
+./bin/kafka-topics.sh --bootstrap-server localhost:9092 --topic topic-humedad --delete
+./bin/kafka-topics.sh --bootstrap-server localhost:9092 --topic topic-temperatura --delete
+
+*/
+
+/* En la carpeta Proyecto
+Ejecucion de proyecto:
+
+1. python3 generadorLectura.py
+2. python3 proyecto.py
+3. python3 visualizacion.py
+4. python3 consultadeDatosHDFS.py
+
+*/
